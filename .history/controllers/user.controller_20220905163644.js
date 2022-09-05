@@ -46,9 +46,7 @@ function save(req, res) {
                 sub_city: {type:"string"},
                 wereda: {type:"string"},
                 house_no: {type:"string"},
-                role_type:{type:"string"},
-                activation:{type:"boolean"}
-            
+                role_type:{type:"string"}
             }
         
 
@@ -134,7 +132,6 @@ function update(req, res) {
     wereda: req.body.wereda,
     house_no: req.body.house_no,
     role_type: req.body.role_type,
-    activation: req.body.activation
   };
 
   const userId = req.params.id;
